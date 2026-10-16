@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic {
+    font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', serif;
+    line-height: 2;
+  }
+  .font-arabic-title {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  }
+}
+
+@media print {
+  .no-print,
+  header,
+  footer,
+  aside,
+  button,
+  .no-print-zone {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #printable-assessment-document {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  table {
+    page-break-inside: auto;
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  .question-card,
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+

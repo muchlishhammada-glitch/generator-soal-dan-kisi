@@ -1,0 +1,7 @@
+{
+  "name": "Generator Kisi-kisi & Butir Soal HOTS",
+  "description": "Perancang Matriks Kisi-kisi dan Butir Soal Pilihan Ganda HOTS berstandar dengan stimulus PBL dalam Bahasa Indonesia dan Bahasa Arab.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
